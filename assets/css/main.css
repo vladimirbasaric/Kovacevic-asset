@@ -18,26 +18,25 @@
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #0b2341; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ed502e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+/* ovo su boje sa originalnog template */
+/* :root { 
+  --background-color: #ffffff; 
+  --default-color: #444444; 
+  --heading-color: #0b2341; 
+  --accent-color: #ed502e; 
+  --surface-color: #ffffff; 
+  --contrast-color: #ffffff; 
+  
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ed502e; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ed502e; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #444444;  
+  --nav-hover-color: #ed502e; 
+  --nav-mobile-background-color: #ffffff; 
+  --nav-dropdown-background-color: #ffffff; 
+  --nav-dropdown-color: #444444; 
+  --nav-dropdown-hover-color: #ed502e; 
 }
-
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
   --background-color: #f7f9fd;
@@ -50,6 +49,55 @@
   --heading-color: #ffffff;
   --surface-color: #252525;
   --contrast-color: #ffffff;
+} */
+
+
+/* ovo su boje koje nudi chat gpt - ostavio sam da se klase isto zovu */
+/* ==============================
+   GLOBAL COLORS
+   ============================== */
+:root {
+  /* Osnovne boje */
+  --background-color: #ffffff;       /* Globalna pozadina sajta */
+  --default-color: #444444;          /* Standardna boja teksta */
+  --heading-color: #1A2A6C;          /* Navy Blue za naslove */
+  --accent-color: #FF6F00;           /* Narandžasta za akcione elemente i dugmad */
+  --surface-color: #ffffff;           /* Pozadina kartica i boxed elemenata */
+  --contrast-color: #ffffff;          /* Kontrastni tekst za tamne pozadine */
+}
+
+/* ==============================
+   NAVIGATION COLORS
+   ============================== */
+:root {
+  --nav-color: #1A2A6C;                 /* Boja linkova u meniju */
+  --nav-hover-color: #FF6F00;           /* Hover boja linkova */
+  --nav-mobile-background-color: #ffffff; /* Pozadina mobilnog menija */
+  --nav-dropdown-background-color: #ffffff; /* Pozadina dropdown menija */
+  --nav-dropdown-color: #444444;        /* Boja dropdown linkova */
+  --nav-dropdown-hover-color: #FF6F00;  /* Hover boja dropdown linkova */
+}
+
+/* ==============================
+   COLOR PRESETS - za sekcije
+   ============================== */
+
+/* Svetla sekcija */
+.light-background {
+  --background-color: #f0f4f8; /* Svetla neutralna pozadina */
+  --surface-color: #ffffff;    /* Kartice ostaju bele */
+  --default-color: #444444;    /* Tekst tamno-sivi */
+  --heading-color: #1A2A6C;    /* Naslovi Navy Blue */
+  --contrast-color: #ffffff;   /* Za akcione elemente */
+}
+
+/* Tamna sekcija */
+.dark-background {
+  --background-color: #1A2A6C; /* Navy Blue tamna sekcija */
+  --default-color: #ffffff;     /* Svetao tekst */
+  --heading-color: #ffffff;     /* Naslovi beli */
+  --surface-color: #3F51B5;     /* Indigo kartice */
+  --contrast-color: #ffffff;    /* Kontrastni tekst */
 }
 
 /* Smooth scroll */
@@ -1972,3 +2020,7 @@ section,
   color: var(--contrast-color);
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
+
+
+
+
