@@ -1139,9 +1139,17 @@ section,
 
 /*--------------------------------------------------------------
 # Services Section
+/* Osnovne boje 
+  --background-color: #ffffff;        Globalna pozadina sajta 
+  --default-color: #444444;           Standardna boja teksta 
+  --heading-color: #1A2A6C;           Navy Blue za naslove 
+  --accent-color: #FF6F00;            Narandžasta za akcione elemente i dugmad 
+  --surface-color: #ffffff;            Pozadina kartica i boxed elemenata 
+  --contrast-color: #ffffff;          /* Kontrastni tekst za tamne pozadine 
+
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color);
+  background-color: #FF6F00;
   text-align: center;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   padding: 80px 20px;
@@ -1153,7 +1161,7 @@ section,
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: var(--accent-color);
+  background: #1A2A6C;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -1195,8 +1203,8 @@ section,
 }
 
 .services .service-item:hover {
-  background: var(--accent-color);
-  border-color: var(--accent-color);
+  background: #ffffff;
+  border-color: #ffffff;
 }
 
 .services .service-item:hover .icon {
@@ -1213,7 +1221,7 @@ section,
 
 .services .service-item:hover h3,
 .services .service-item:hover p {
-  color: var(--contrast-color);
+  color: #1A2A6C;
 }
 
 /*--------------------------------------------------------------
